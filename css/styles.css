@@ -10,6 +10,14 @@ body {
 h1 {
   font-size: 24px;
   padding-bottom: 8px;
-  border-bottom: 1px solid aquamarine;
 }
 
+a {
+  color: rgb(75, 75, 75);
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding-bottom: 5px;
+}
