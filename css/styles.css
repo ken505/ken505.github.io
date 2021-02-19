@@ -1,14 +1,15 @@
 @charset "utf-8";
 
+/* スマホ用のCSSはメディアクエリの外に記述する */
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 18px;
   padding-bottom: 8px;
 }
 
@@ -20,4 +21,22 @@ a {
 a:hover {
   border-bottom: 1px solid rgb(175, 175, 175);
   padding-bottom: 5px;
+}
+
+@media screen and (min-width: 481px) {
+  /* 481px以上に適用されるCSS（タブレット用） */
+  body {
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* 960px以上に適用されるCSS（PC用） */
+  body {
+    margin-top: 300px;
+  }
 }
